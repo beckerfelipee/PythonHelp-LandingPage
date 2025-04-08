@@ -28,12 +28,14 @@
     header h1 {
       font-size: 3.5rem;
       color: #FFD700;
+      transition: transform 0.2s ease-in-out; /* Transição para o efeito de aumento */
     }
 
     header p.quote {
       color: #ccc;
       font-style: italic;
       margin-top: 15px;
+      transition: transform 0.2s ease-in-out; /* Transição para o efeito de aumento */
     }
 
     main {
@@ -48,12 +50,14 @@
       border-radius: 16px;
       padding: 30px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease-in-out; /* Transição para o efeito de aumento */
     }
 
     section h2 {
       color: #FFD700;
       margin-bottom: 20px;
       font-size: 1.8rem;
+      transition: transform 0.2s ease-in-out; /* Transição para o efeito de aumento */
     }
 
     ul {
@@ -65,6 +69,7 @@
       margin-bottom: 10px;
       position: relative;
       padding-left: 25px;
+      transition: transform 0.2s ease-in-out; /* Transição para o efeito de aumento */
     }
 
     ul li::before {
@@ -72,6 +77,11 @@
       position: absolute;
       left: 0;
       top: 0;
+    }
+
+    /* Efeito hover para aumentar o tamanho do texto */
+    ul li:hover, section h2:hover, header h1:hover, header p.quote:hover, section:hover {
+      transform: scale(1.02); /* Aumenta o tamanho do item */
     }
 
     .qr-section {
@@ -82,6 +92,11 @@
     .qr-section img {
       width: 150px;
       margin-top: 10px;
+      transition: transform 0.2s ease-in-out; /* Transição para o efeito de aumento */
+    }
+
+    .qr-section img:hover {
+      transform: scale(1.02); /* Aumenta o tamanho da imagem */
     }
 
     .profile-section {
@@ -93,6 +108,11 @@
       background-color: #1E1F29;
       padding: 40px 20px;
       border-radius: 16px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .profile-section:hover {
+      transform: scale(1.02); /* Aumenta o tamanho da seção */
     }
 
     .profile-section img {
@@ -101,10 +121,20 @@
       border-radius: 50%;
       margin-right: 30px;
       object-fit: cover;
+      transition: transform 0.2s ease-in-out; /* Transição para o efeito de aumento */
+    }
+
+    .profile-section img:hover {
+      transform: scale(1.1); /* Aumenta o tamanho da imagem */
     }
 
     .profile-info {
       text-align: center;
+      transition: color 0.3s, transform 0.2s ease-in-out;
+    }
+
+    .profile-info:hover {
+      transform: scale(1.05);
     }
 
     .social-links a {
@@ -112,11 +142,12 @@
       color: #FFD700;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
+      transition: color 0.3s, transform 0.2s ease-in-out; /* Transição para o efeito de aumento */
     }
 
     .social-links a:hover {
       color: #ffffff;
+      transform: scale(1.05); /* Aumenta o tamanho do link */
     }
 
     footer {
